@@ -359,7 +359,7 @@ export const projects = [
     description:
       "Integrated Google OAuth & NextAuth for secure authentication.\nAdmin module to manage menu items, categories, orders, and user details.\nStripe payment integration for seamless transactions.\nUser-friendly interface with Home, Menu, Cart, Profile, and Orders pages and Real-time order management for both users and admins.",
     image:
-    "./fusion-feast.png",
+    "./Fusion-feast.png",
     tags: ["Next Js", "MongoDb", "Node Js", "Tailwind CSS"],
     category: "web app",
     github: "https://github.com/BRV12G/pizzaDarbarr2",
