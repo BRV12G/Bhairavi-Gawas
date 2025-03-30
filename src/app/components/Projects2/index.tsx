@@ -97,7 +97,7 @@ interface ProjectsProps {
   setOpenModal: (modalState: { state: boolean; project: Projects; }) => void;
 }
 
-const Projects: React.FC<ProjectsProps> = ({ setOpenModal }) => {
+const Projects2: React.FC<ProjectsProps> = ({ setOpenModal }) => {
   const [toggle, setToggle] = useState<string>('all');
 
   return (
@@ -129,4 +129,4 @@ const Projects: React.FC<ProjectsProps> = ({ setOpenModal }) => {
   );
 };
 
-export default Projects;
+export default Projects2;

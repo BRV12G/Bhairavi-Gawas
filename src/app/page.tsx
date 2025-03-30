@@ -1,15 +1,15 @@
 "use client";
 
-// import Image from "next/image";
 import { useState } from "react";
 import HeroSection from "./components/HeroSection";
 import Skills from "./components/Skills";
-import Projects from "./components/Projects";
+import Projects2 from "./components/Projects2";
 import Contact from "./components/Contact";
 import Experience from "./components/Experience";
 import Education from "./components/Education";
 import ProjectDetails from "./components/ProjectDetails";
 import styled from "styled-components";
+import { Projects } from '../../types/projects';
 
 
 const Wrapper = styled.div`
@@ -27,7 +27,13 @@ const Wrapper = styled.div`
   clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 98%, 0 100%);
 `;
 export default function Home() {
-  const [openModal, setOpenModal] = useState({ state: false, project: null });
+
+  interface ProjectDetailsState {
+    state: boolean;
+    project: Projects | null;
+  }
+  
+  const [openModal, setOpenModal] = useState<ProjectDetailsState>({ state: false, project: null });
   return (
     <>
       <HeroSection />
@@ -35,7 +41,7 @@ export default function Home() {
         <Skills />
         <Experience />
       </Wrapper>
-      <Projects openModal={openModal} setOpenModal={setOpenModal} />
+      <Projects2 openModal={openModal} setOpenModal={setOpenModal} />
       <Wrapper>
         <Education />
         <Contact />
