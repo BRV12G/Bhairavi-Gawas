@@ -2,6 +2,8 @@ import { CloseRounded, GitHub, LinkedIn } from '@mui/icons-material';
 import { Modal } from '@mui/material';
 import React from 'react'
 import styled from 'styled-components'
+import { DefaultTheme } from 'styled-components';
+
 
 const Container = styled.div`
 width: 100%;
@@ -154,7 +156,11 @@ const ButtonGroup = styled.div`
     gap: 12px;
 `;
 
-const Button = styled.a`
+interface ButtonProps {
+    dull?: boolean;
+  }
+
+const Button = styled.a<ButtonProps>`
     width: 100%;
     text-align: center;
     font-size: 16px;
