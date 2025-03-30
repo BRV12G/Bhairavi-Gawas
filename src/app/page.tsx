@@ -26,6 +26,18 @@ const Wrapper = styled.div`
   width: 100%;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 98%, 0 100%);
 `;
+
+const defaultProject: Projects = {
+  id: 0,
+  title: "Default Project",
+  date: "N/A",
+  description: "This is a placeholder project.",
+  image: "/default.jpg",
+  tags: ["default"],
+  category: "general",
+  github: "#",
+  webapp: "#",
+};
 export default function Home() {
 
   interface ProjectDetailsState {
@@ -33,7 +45,7 @@ export default function Home() {
     project: Projects ;
   }
   
-  const [openModal, setOpenModal] = useState<ProjectDetailsState>({ state: false, project: null });
+  const [openModal, setOpenModal] = useState<ProjectDetailsState>({ state: false, project: defaultProject });
   return (
     <>
       <HeroSection />
