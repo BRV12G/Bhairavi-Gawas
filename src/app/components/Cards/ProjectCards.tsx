@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 import styled from 'styled-components'
 
 
@@ -121,10 +121,17 @@ const Avatar = styled.img`
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
     border: 3px solid ${({ theme }) => theme.card};
 `
+
+interface Member {
+    id: number;
+    name: string;
+    img: string;
+    role: string;
+}
 interface Project {
-    tags: any
+    tags: string[];
     date: ReactNode
-    member: any
+    member: Member[];
     image: string;
     title: string;
     description: string;
