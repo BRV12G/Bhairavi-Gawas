@@ -143,7 +143,7 @@ const Skill = styled.div`
 `
 interface ExperienceType {
     desc: React.JSX.Element
-    skills: React.JSX.Element
+    skills: string[]
     doc: React.JSX.Element
     img: string;
     company: string;
