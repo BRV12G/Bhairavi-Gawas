@@ -9,7 +9,7 @@ import Experience from "./components/Experience";
 import Education from "./components/Education";
 import ProjectDetails from "./components/ProjectDetails";
 import styled from "styled-components";
-import { Projects } from '../../types/projects';
+import   {Projects}  from '@/app/types/projects';
 
 
 const Wrapper = styled.div`
