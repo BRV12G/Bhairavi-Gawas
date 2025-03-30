@@ -141,16 +141,19 @@ const Skill = styled.div`
         font-size: 12px;
     }
 `
-// interface ExperienceType {
-//     img: string;
-//     company: string;
-//     role: string;
-//     date: string;
-//     // ... other properties ...
-//   }
+interface ExperienceType {
+    desc: React.JSX.Element
+    skills: React.JSX.Element
+    doc: React.JSX.Element
+    img: string;
+    company: string;
+    role: string;
+    date: string;
+    // ... other properties ...
+  }
 
 
-const ExperienceCard = ({ experience }: { experience: any }) => {
+const ExperienceCard = ({ experience }: { experience: ExperienceType }) => {
     return (
         <Card>
             <Top>
