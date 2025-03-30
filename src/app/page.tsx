@@ -30,7 +30,7 @@ export default function Home() {
 
   interface ProjectDetailsState {
     state: boolean;
-    project: Projects | null;
+    project: Projects ;
   }
   
   const [openModal, setOpenModal] = useState<ProjectDetailsState>({ state: false, project: null });

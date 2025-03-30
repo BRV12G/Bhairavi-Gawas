@@ -247,28 +247,29 @@ import { CloseRounded } from "@mui/icons-material";
 import { Modal } from "@mui/material";
 import React from "react";
 import styled from "styled-components";
+import { Projects } from '../../types/projects';
 
-interface Project {
-  id?: string;
-  image: string;
-  title: string;
-  date: string;
-  tags: string[];
-  description: string;
-  member?: {
-    id: string;
-    img: string;
-    name: string;
-    github: string;
-    linkedin: string;
-  }[];
-  github: string;
-  webapp: string;
-}
+// interface Project {
+//   id: number;
+//   image: string;
+//   title: string;
+//   date: string;
+//   tags: string[];
+//   description: string;
+//   member?: {
+//     id: string;
+//     img: string;
+//     name: string;
+//     github: string;
+//     linkedin: string;
+//   }[];
+//   github: string;
+//   webapp: string;
+// }
 
 interface ModalProps {
-  openModal: { state: boolean; project: Project | null };
-  setOpenModal: (value: { state: boolean; project: Project | null }) => void;
+  openModal: { state: boolean; project: Projects  };
+  setOpenModal: (value: { state: boolean; project: Projects }) => void;
 }
 
 const Container = styled.div`
