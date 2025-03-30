@@ -85,9 +85,14 @@ interface Project {
   // } 
 }
 
+// interface ProjectsProps {
+//   openModal: boolean;
+//   setOpenModal: (openModal: boolean) => void;
+// }
+
 interface ProjectsProps {
-  openModal: boolean;
-  setOpenModal: (openModal: boolean) => void;
+  openModal: { state: boolean; project: Project; };
+  setOpenModal: (modalState: { state: boolean; project: Project; }) => void;
 }
 
 const Projects: React.FC<ProjectsProps> = ({ openModal, setOpenModal }) => {
