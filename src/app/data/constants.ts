@@ -395,7 +395,7 @@ export const projects = [
     ],
     category: "web app",
     github: "https://github.com/BRV12G/projectmanagement",
-    // webapp: "https://vexa-app.netlify.app/",
+    webapp: " ",
   },
   {
     id: 2,
@@ -406,9 +406,9 @@ export const projects = [
     image:
     "./dots.png",
     tags: ["Python"],
-    // category: "machine learning",
+    category: "machine learning",
     github: "https://github.com/BRV12G/ai-project-",
-    // webapp: "https://brain-tumor.netlify.app/",
+    webapp: " ",
     // member: [
     //   {
     //     name: "Rishav Chanda",
@@ -433,9 +433,9 @@ export const projects = [
     image:
     "https://th.bing.com/th/id/OIP._kqCIaycCp4P0SCjb0KbQgHaE8?rs=1&pid=ImgDetMain",
     tags: ["C++"],
-    // category: "android app",
+    category: "web app",
     github: "https://github.com/BRV12G/bloodbankmanagementsystem",
-    // webapp: "https://play.google.com/store/apps/details?id=com.rishav.buckoid",
+    webapp: "",
   },
   // {
   //   id: 10,
