@@ -142,13 +142,7 @@ const Skill = styled.div`
     }
 `
 interface ExperienceType {
-    desc: React.JSX.Element
-    skills: string[]
-    doc: string,
-    img: string;
-    company: string;
-    role: string;
-    date: string;
+    id: number; img: string; role: string; company: string; date: string; desc: string; skills: string[]; doc: string;
     // ... other properties ...
   }
 
