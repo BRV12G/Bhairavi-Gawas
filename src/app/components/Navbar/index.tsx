@@ -8,7 +8,13 @@ import { useTheme } from 'styled-components';
 import { FaMoon } from "react-icons/fa";
 import { IoIosSunny } from "react-icons/io";
 
-const Navbar = ({handleToggleDarkMode, darkMode}) => {
+
+interface NavbarProps {
+  darkMode: boolean;
+  handleToggleDarkMode: () => void; // ✅ Define the function type explicitly
+}
+
+const Navbar: React.FC<NavbarProps> = ({handleToggleDarkMode, darkMode}) => {
   const [isOpen, setIsOpen] = React.useState(false);
   const theme = useTheme()
 
@@ -17,9 +23,9 @@ const Navbar = ({handleToggleDarkMode, darkMode}) => {
     <Nav>
       <NavbarContainer className='border-b border-gray-600'>
         <NavLogo to='/'>
-          <a style={{ display: "flex", alignItems: "center", color: "white", marginBottom: '20;', cursor: 'pointer' }}>
+          <div style={{ display: "flex", alignItems: "center", color: "white", marginBottom: '20;', cursor: 'pointer' }}>
             <DiCssdeck size="3rem" /> <Span>Portfolio</Span>
-          </a>
+          </div>
         </NavLogo>
         <MobileIcon>
           <FaBars onClick={() => {
