@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { ReactNode } from 'react';
 
 const Document = styled.img`
     display: none;
@@ -127,6 +128,8 @@ const Grade = styled.div`
 `
 
 interface Education {
+    grade: ReactNode
+    desc: ReactNode
     img: string;
     school: string;
     degree: string;
