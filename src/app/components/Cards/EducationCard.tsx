@@ -126,9 +126,14 @@ const Grade = styled.div`
     }
 `
 
+interface Education {
+    img: string;
+    school: string;
+    degree: string;
+    date: string;
+  }
 
-
-const EducationCard = ({ education }) => {
+const EducationCard = ({ education }: { education: Education }) => {
     return (
         <Card>
             <Top>
