@@ -107,31 +107,31 @@ const Description = styled.div`
     text-overflow: ellipsis;
 `
 
-const Members = styled.div`
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
-`
-const Avatar = styled.img`
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    margin-left: -10px;
-    background-color: ${({ theme }) => theme.white};
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    border: 3px solid ${({ theme }) => theme.card};
-`
+// const Members = styled.div`
+//     display: flex;
+//     align-items: center;
+//     padding-left: 10px;
+// `
+// const Avatar = styled.img`
+//     width: 38px;
+//     height: 38px;
+//     border-radius: 50%;
+//     margin-left: -10px;
+//     background-color: ${({ theme }) => theme.white};
+//     box-shadow: 0 0 10px rgba(0,0,0,0.2);
+//     border: 3px solid ${({ theme }) => theme.card};
+// `
 
-interface Member {
-    id: number;
-    name: string;
-    img: string;
-    role: string;
-}
+// interface Member {
+//     id: number;
+//     name: string;
+//     img: string;
+//     role: string;
+// }
 interface Project {
     tags: string[];
     date: ReactNode
-    member: Member[];
+    // member: Member[];
     image: string;
     title: string;
     description: string;
@@ -157,11 +157,11 @@ const ProjectCards: React.FC<ProjectCardsProps> = ({project,setOpenModal}) => {
                 <Date>{project.date}</Date>
                 <Description>{project.description}</Description>
             </Details>
-            <Members>
+            {/* <Members>
                 {project.member?.map((member) => (
                     <Avatar src={member.img} key={member.id}/>
                 ))}
-            </Members>
+            </Members> */}
             {/* <Button>View Project</Button> */}
         </Card>
     )
