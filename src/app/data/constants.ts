@@ -265,6 +265,7 @@ export const experiences = [
       "Analyzing Requiriments",
       "Flowcharts"
     ],
+    doc: "",
   },
   {
     id: 3,
@@ -273,6 +274,8 @@ export const experiences = [
     company: "Team BHP Robotics",
     date: "Sept 2024 - May 2024",
     desc: "Direct a team of 100+ students in Team BHP Robotics, managing team leads across various departments to ensure effective coordination, timely task completion, and successful initiative execution.",
+    skills: [],
+    doc: "",
 
   },
   {
@@ -283,6 +286,8 @@ export const experiences = [
     company: "Team BHP Robotics",
     date: "Aug 2023 - Sept 2024",
     desc: "Executed administration and financial management for Team BHP Robotics leading to strong organizational skills.",
+    skills: [],
+    doc: "",
     
   },
   {
@@ -293,6 +298,8 @@ export const experiences = [
     company: "Rudraksha Welffare Foundation - Team BHP Robotics",
     date: "May 2022 - Aug 2023",
     desc: "Conducted Robotics related workshops for various schools higher secondary schools and colleges.",
+    skills: [],
+    doc: "",
   },
 ];
 
