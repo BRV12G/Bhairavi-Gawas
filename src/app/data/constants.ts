@@ -233,7 +233,7 @@ export const experiences = [
     doc: "./Nexocide-Certificate.png",
   },
   {
-    id: 0,
+    id: 1,
     img: "https://th.bing.com/th/id/OIP.EcWnW8fX-rSeTf8CvX7uGgHaHa?rs=1&pid=ImgDetMain",
     role: "Software Engineer Intern",
     company: "Creative Capsule Infotech Pvt. Ltd.",
@@ -254,7 +254,7 @@ export const experiences = [
     doc: "./CCI-Certificate.png",
   },
   {
-    id: 1,
+    id: 2,
     img: "https://th.bing.com/th/id/OIP.sgUxQIarkM-NyZ6LzJkxFAAAAA?rs=1&pid=ImgDetMain",
     role: "Business Analyst Intern",
     company: "Remote Software Solutions Pvt. Ltd.",
@@ -267,7 +267,7 @@ export const experiences = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     img: "https://th.bing.com/th/id/OIP.jelllC7Kjx6X49k7ZJna1wHaHd?rs=1&pid=ImgDetMain",
     role: "Manager -  CO-CURRICULAR",
     company: "Team BHP Robotics",
@@ -276,7 +276,7 @@ export const experiences = [
 
   },
   {
-    id: 3,
+    id: 4,
     img: "https://th.bing.com/th/id/OIP.jelllC7Kjx6X49k7ZJna1wHaHd?rs=1&pid=ImgDetMain",
 
     role: "Administrative Head and Treasurer",
@@ -286,7 +286,7 @@ export const experiences = [
     
   },
   {
-    id: 4,
+    id: 5,
     img: "https://th.bing.com/th/id/OIP.jelllC7Kjx6X49k7ZJna1wHaHd?rs=1&pid=ImgDetMain",
 
     role: "Workshop Head ",
