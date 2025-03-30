@@ -423,16 +423,28 @@ const Button = styled.a<ButtonProps>`
   }
 `;
 
+const defaultProject: Projects = {
+  id: 0,
+  title: "Default Project",
+  date: "N/A",
+  description: "This is a placeholder project.",
+  image: "/default.jpg",
+  tags: ["default"],
+  category: "general",
+  github: "#",
+  webapp: "#",
+};
+
 const ProjectModal: React.FC<ModalProps> = ({ openModal, setOpenModal }) => {
   const project = openModal?.project;
 
   return (
-    <Modal open={openModal.state} onClose={() => setOpenModal({ state: false, project: null })}>
+    <Modal open={openModal.state} onClose={() => setOpenModal({ state: false, project: defaultProject })}>
       <Container>
         <Wrapper>
           <CloseRounded
             style={{ position: "absolute", top: "10px", right: "20px", cursor: "pointer" }}
-            onClick={() => setOpenModal({ state: false, project: null })}
+            onClick={() => setOpenModal({ state: false, project: defaultProject })}
           />
           <Image src={project?.image} />
           <Title>{project?.title}</Title>
