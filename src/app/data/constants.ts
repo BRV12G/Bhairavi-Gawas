@@ -234,7 +234,7 @@ export const experiences = [
   },
   {
     id: 0,
-    // img: "https://th.bing.com/th/id/OIP.0VrqkHMAXbz9VE80MeXdXQHaA-?rs=1&pid=ImgDetMain",
+    img: "https://th.bing.com/th/id/OIP.EcWnW8fX-rSeTf8CvX7uGgHaHa?rs=1&pid=ImgDetMain",
     role: "Software Engineer Intern",
     company: "Creative Capsule Infotech Pvt. Ltd.",
     date: "July 2024- Aug 2024",
@@ -255,7 +255,7 @@ export const experiences = [
   },
   {
     id: 1,
-    // img: "https://remotesoftwaresolutions.com/wp-content/uploads/2020/05/logo-original.png",
+    img: "https://th.bing.com/th/id/OIP.sgUxQIarkM-NyZ6LzJkxFAAAAA?rs=1&pid=ImgDetMain",
     role: "Business Analyst Intern",
     company: "Remote Software Solutions Pvt. Ltd.",
     date: " Sept 2024 - Feb 2024",

@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+// import Image from "next/image";
 import { useState } from "react";
 import HeroSection from "./components/HeroSection";
 import Skills from "./components/Skills";

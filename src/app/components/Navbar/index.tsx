@@ -1,17 +1,21 @@
 import React from 'react'
-import { Nav, NavLink, NavbarContainer, Span, NavLogo, NavItems, GitHubButton, ButtonContainer, MobileIcon, MobileMenu, MobileNavLogo, MobileLink } from './NavbarStyledComponent'
+import { Nav, NavLink, NavbarContainer, Span, NavLogo, NavItems, GitHubButton, ButtonContainer, MobileIcon, MobileMenu,  MobileLink } from './NavbarStyledComponent'
 import { DiCssdeck } from 'react-icons/di';
 import { FaBars } from 'react-icons/fa';
 import { Bio } from '../../data/constants';
-import { Close, CloseRounded } from '@mui/icons-material';
+// import { Close, CloseRounded } from '@mui/icons-material';
 import { useTheme } from 'styled-components';
+import { FaMoon } from "react-icons/fa";
+import { IoIosSunny } from "react-icons/io";
 
-const Navbar = () => {
+const Navbar = ({handleToggleDarkMode, darkMode}) => {
   const [isOpen, setIsOpen] = React.useState(false);
   const theme = useTheme()
+
+  
   return (
     <Nav>
-      <NavbarContainer>
+      <NavbarContainer className='border-b border-gray-600'>
         <NavLogo to='/'>
           <a style={{ display: "flex", alignItems: "center", color: "white", marginBottom: '20;', cursor: 'pointer' }}>
             <DiCssdeck size="3rem" /> <Span>Portfolio</Span>
@@ -32,6 +36,9 @@ const Navbar = () => {
         <ButtonContainer>
           <GitHubButton href={Bio.github} target="_blank">Github Profile</GitHubButton>
         </ButtonContainer>
+        <ButtonContainer><button onClick={handleToggleDarkMode} className=' text-purple-800 p-4 rounded-full text-4xl'>{darkMode ? <FaMoon />:<IoIosSunny />}
+
+        </button></ButtonContainer>
         {
           isOpen &&
           <MobileMenu isOpen={isOpen}>
@@ -51,6 +58,7 @@ const Navbar = () => {
               setIsOpen(!isOpen)
             }}>Education</MobileLink>
             <GitHubButton style={{padding: '10px 16px',background: `${theme.primary}`, color: 'white',width: 'max-content'}} href={Bio.github} target="_blank">Github Profile</GitHubButton>
+            <button onClick={handleToggleDarkMode} className=' text-purple-800 p-4 rounded-full text-3xl'>{darkMode ? <FaMoon />:<IoIosSunny />}</button>
           </MobileMenu>
         }
       </NavbarContainer>

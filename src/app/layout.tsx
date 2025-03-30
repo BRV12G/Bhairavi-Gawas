@@ -1,5 +1,5 @@
 "use client";
-import type { Metadata } from "next";
+// import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "styled-components";
@@ -8,7 +8,7 @@ import { darkTheme, lightTheme } from "./utils/Themes";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import styled from "styled-components";
-import { metadata } from "./metadata";
+// import { metadata } from "./metadata";
 
 
 const geistSans = Geist({
@@ -38,15 +38,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const [darkMode, setDarkMode] = useState(true);
+
+  const handleToggleDarkMode = () => {
+    // setDarkMode(!darkMode);
+    setDarkMode((prev) => !prev);
+  };
+
   return (
     <html lang="en">
-      <body
+      <body 
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
-          <Navbar />
+          <Navbar handleToggleDarkMode={handleToggleDarkMode} darkMode={darkMode}/>
           <Body>{children}</Body>
           <Footer />
+
         </ThemeProvider>
       </body>
     </html>
