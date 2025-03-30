@@ -335,7 +335,7 @@ export const education = [
 
 export const projects = [
   {
-    id: 9,
+    id: 0,
     title: "TrippiTron",
     date: "2025",
     description:
@@ -350,9 +350,10 @@ export const projects = [
     category: "web app",
     github: "https://github.com/BRV12G/Trippitron-f",
     webapp: "https://trippitron.vercel.app/",
+    member: [],
   },
   {
-    id: 0,
+    id: 1,
     title: "Fusion Feast",
     date: "2025",
     description:
@@ -363,23 +364,23 @@ export const projects = [
     category: "web app",
     github: "https://github.com/BRV12G/pizzaDarbarr2",
     webapp: "https://pizza-darbarr2-cytp.vercel.app/",
-    // member: [
-    //   {
-    //     name: "Rishav Chanda",
-    //     img: "https://avatars.githubusercontent.com/u/64485885?v=4",
-    //     linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
-    //     github: "https://github.com/rishavchanda/",
-    //   },
-    //   {
-    //     name: "Upasana Chaudhuri",
-    //     img: "https://avatars.githubusercontent.com/u/100614635?v=4",
-    //     linkedin: "https://www.linkedin.com/in/upasana-chaudhuri-2a2bb5231/",
-    //     github: "https://github.com/upasana0710",
-    //   },
-    // ],
+    member: [
+      // {
+      //   name: "Rishav Chanda",
+      //   img: "https://avatars.githubusercontent.com/u/64485885?v=4",
+      //   linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
+      //   github: "https://github.com/rishavchanda/",
+      // },
+      // {
+      //   name: "Upasana Chaudhuri",
+      //   img: "https://avatars.githubusercontent.com/u/100614635?v=4",
+      //   linkedin: "https://www.linkedin.com/in/upasana-chaudhuri-2a2bb5231/",
+      //   github: "https://github.com/upasana0710",
+      // },
+    ],
   },
   {
-    id: 1,
+    id: 2,
     title: "Project Management System",
     date: "2023",
     description:
@@ -396,9 +397,10 @@ export const projects = [
     category: "web app",
     github: "https://github.com/BRV12G/projectmanagement",
     webapp: " ",
+    member: [],
   },
   {
-    id: 2,
+    id: 3,
     title: "Dots and Boxes Game",
     date: "2024",
     description:
@@ -409,23 +411,23 @@ export const projects = [
     category: "machine learning",
     github: "https://github.com/BRV12G/ai-project-",
     webapp: " ",
-    // member: [
-    //   {
-    //     name: "Rishav Chanda",
-    //     img: "https://avatars.githubusercontent.com/u/64485885?v=4",
-    //     linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
-    //     github: "https://github.com/rishavchanda/",
-    //   },
-    //   {
-    //     name: "Upasana Chaudhuri",
-    //     img: "https://avatars.githubusercontent.com/u/100614635?v=4",
-    //     linkedin: "https://www.linkedin.com/in/upasana-chaudhuri-2a2bb5231/",
-    //     github: "https://github.com/upasana0710",
-    //   },
-    // ],
+    member: [
+      // {
+      //   name: "Rishav Chanda",
+      //   img: "https://avatars.githubusercontent.com/u/64485885?v=4",
+      //   linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
+      //   github: "https://github.com/rishavchanda/",
+      // },
+      // {
+      //   name: "Upasana Chaudhuri",
+      //   img: "https://avatars.githubusercontent.com/u/100614635?v=4",
+      //   linkedin: "https://www.linkedin.com/in/upasana-chaudhuri-2a2bb5231/",
+      //   github: "https://github.com/upasana0710",
+      // },
+    ],
   },
   {
-    id: 3,
+    id: 4,
     title: "Blood Bank Management System",
     date: "2022",
     description:
@@ -436,6 +438,7 @@ export const projects = [
     category: "web app",
     github: "https://github.com/BRV12G/bloodbankmanagementsystem",
     webapp: "",
+    member: [],
   },
   // {
   //   id: 10,

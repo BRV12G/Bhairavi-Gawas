@@ -66,24 +66,26 @@ import React, { useState } from 'react';
 import { Container, Wrapper, Title, Desc, CardContainer, ToggleButtonGroup, ToggleButton, Divider } from './ProjectsStyle';
 import ProjectCard from '../Cards/ProjectCards';
 import { projects } from '../../data/constants';
+import type { Projects } from '../../types/projects';
 
-interface Project {
-  id: string;
-  title: string;
-  date: string;
-  description: string;
-  image: string;
-  tags: string[];
-  category: string;
-  github: string;
-  webapp?: string;
-  // member?: {
-  //   name: string;
-  //   img: string;
-  //   linkedin: string;
-  //   github: string;
-  // } 
-}
+
+// interface Project {
+//   id: string;
+//   title: string;
+//   date: string;
+//   description: string;
+//   image: string;
+//   tags: string[];
+//   category: string;
+//   github: string;
+//   webapp?: string;
+//   member?: {
+//     name: string;
+//     img: string;
+//     linkedin: string;
+//     github: string;
+//   } 
+// }
 
 // interface ProjectsProps {
 //   openModal: boolean;
@@ -91,8 +93,8 @@ interface Project {
 // }
 
 interface ProjectsProps {
-  openModal: { state: boolean; project: Project; };
-  setOpenModal: (modalState: { state: boolean; project: Project; }) => void;
+  openModal: { state: boolean; project: Projects; };
+  setOpenModal: (modalState: { state: boolean; project: Projects; }) => void;
 }
 
 const Projects: React.FC<ProjectsProps> = ({ openModal, setOpenModal }) => {
@@ -119,7 +121,7 @@ const Projects: React.FC<ProjectsProps> = ({ openModal, setOpenModal }) => {
           {projects
             .filter((project) => toggle === 'all' || project.category === toggle)
             .map((project) => (
-              <ProjectCard key={project.id} project={project} openModal={openModal} setOpenModal={setOpenModal} />
+              <ProjectCard key={project.id} project={project}  setOpenModal={setOpenModal} />
             ))}
         </CardContainer>
       </Wrapper>

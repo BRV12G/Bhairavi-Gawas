@@ -1,5 +1,6 @@
 import React, { ReactNode } from 'react'
 import styled from 'styled-components'
+import { Projects } from '../../types/projects';
 
 
 const Button = styled.button`
@@ -128,19 +129,19 @@ const Description = styled.div`
 //     img: string;
 //     role: string;
 // }
-interface Project {
-    tags: string[];
-    date: ReactNode
-    // member: Member[];
-    image: string;
-    title: string;
-    description: string;
-    // Add other properties based on your data
-  }
+// interface Project {
+//     tags: string[];
+//     date: ReactNode
+//     // member: Member[];
+//     image: string;
+//     title: string;
+//     description: string;
+//     // Add other properties based on your data
+//   }
 
   interface ProjectCardsProps {
-    project: Project;
-    setOpenModal: (modalState: { state: boolean; project: Project }) => void;
+    project: Projects;
+    setOpenModal: (modalState: { state: boolean; project: Projects }) => void;
   }
 
 const ProjectCards: React.FC<ProjectCardsProps> = ({project,setOpenModal}) => {
