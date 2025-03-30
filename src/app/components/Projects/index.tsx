@@ -97,7 +97,7 @@ interface ProjectsProps {
   setOpenModal: (modalState: { state: boolean; project: Projects; }) => void;
 }
 
-const Projects: React.FC<ProjectsProps> = ({ openModal, setOpenModal }) => {
+const Projects: React.FC<ProjectsProps> = ({ setOpenModal }) => {
   const [toggle, setToggle] = useState<string>('all');
 
   return (
