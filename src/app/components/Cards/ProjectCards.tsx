@@ -121,8 +121,22 @@ const Avatar = styled.img`
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
     border: 3px solid ${({ theme }) => theme.card};
 `
+interface Project {
+    tags: any
+    date: ReactNode
+    member: any
+    image: string;
+    title: string;
+    description: string;
+    // Add other properties based on your data
+  }
 
-const ProjectCards = ({project,setOpenModal}) => {
+  interface ProjectCardsProps {
+    project: Project;
+    setOpenModal: (modalState: { state: boolean; project: Project }) => void;
+  }
+
+const ProjectCards: React.FC<ProjectCardsProps> = ({project,setOpenModal}) => {
     return (
         <Card onClick={() => setOpenModal({state: true, project: project})}>
             <Image src={project.image} alt="image"/>
