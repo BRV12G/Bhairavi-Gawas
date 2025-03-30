@@ -303,7 +303,7 @@ export const education = [
     school: "Padre Conceição College of Engineering",
     date: "Aug 2021 - Dec 2025",
     grade: "8.71 CGPA",
-    // desc: "I am currently pursuing a Bachelor's degree in Computer Science and Engineering at Kalinga Institute of Industrial Technology, Bhubaneswar. I have completed 4 semesters and have a CGPA of 8.71. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others. I am also a member of the Google Developers Student Club (GDSC) at KIIT, where I am learning and working on exciting projects with a team of talented developers.",
+    desc: "",
     degree: "Bachelor of Engineering - B.e, Computer Science and Engineering",
   },
   {
@@ -312,7 +312,7 @@ export const education = [
     school: "GVM's S.N.J.A. Higher Secondary School",
     date: "May 2020 - Apr 2021",
     grade: "79.79%",
-    // desc: "I completed my class 12 high school education at Methodist School, Dankuni, where I studied Science with Computer Science.",
+    desc: "",
     degree: " 12th (Goa Board of Higher Secondary Education)",
   },
   {
@@ -321,7 +321,7 @@ export const education = [
     school: "A. J. de Almeida High School",
     date: "Apr 2018 - Apr 2019",
     grade: "89.89%",
-    // desc: "I completed my class 10 education at Methodist School, Dankuni, where I studied Science with Computer Application.",
+    desc: "",
     degree: "10th (Goa board of Education)",
   },
 ];
