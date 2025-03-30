@@ -22,11 +22,11 @@ const Navbar: React.FC<NavbarProps> = ({handleToggleDarkMode, darkMode}) => {
   return (
     <Nav>
       <NavbarContainer className='border-b border-gray-600'>
-        <NavLogo to='/'>
-          <div style={{ display: "flex", alignItems: "center", color: "white", marginBottom: '20;', cursor: 'pointer' }}>
+        {/* <NavLogo to='/'>
+          <a style={{ display: "flex", alignItems: "center", color: "white", marginBottom: '20;', cursor: 'pointer' }}>
             <DiCssdeck size="3rem" /> <Span>Portfolio</Span>
-          </div>
-        </NavLogo>
+          </a>
+        </NavLogo> */}
         <MobileIcon>
           <FaBars onClick={() => {
             setIsOpen(!isOpen)
