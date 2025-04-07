@@ -42,7 +42,7 @@ const Navbar: React.FC<NavbarProps> = ({handleToggleDarkMode, darkMode}) => {
         <ButtonContainer>
           <GitHubButton href={Bio.github} target="_blank">Github Profile</GitHubButton>
         </ButtonContainer>
-        <ButtonContainer><button onClick={handleToggleDarkMode} className=' text-purple-800 p-4 rounded-full text-4xl'>{darkMode ? <FaMoon />:<IoIosSunny />}
+        <ButtonContainer><button onClick={handleToggleDarkMode} className=' text-purple-800 p-4 rounded-full text-4xl cursor-pointer'>{darkMode ? <FaMoon />:<IoIosSunny />}
 
         </button></ButtonContainer>
         {
@@ -64,7 +64,7 @@ const Navbar: React.FC<NavbarProps> = ({handleToggleDarkMode, darkMode}) => {
               setIsOpen(!isOpen)
             }}>Education</MobileLink>
             <GitHubButton style={{padding: '10px 16px',background: `${theme.primary}`, color: 'white',width: 'max-content'}} href={Bio.github} target="_blank">Github Profile</GitHubButton>
-            <button onClick={handleToggleDarkMode} className=' text-purple-800 p-4 rounded-full text-3xl'>{darkMode ? <FaMoon />:<IoIosSunny />}</button>
+            <button onClick={handleToggleDarkMode} className=' text-purple-800 p-4 rounded-full text-3xl cursor-pointer'>{darkMode ? <FaMoon />:<IoIosSunny />}</button>
           </MobileMenu>
         }
       </NavbarContainer>
